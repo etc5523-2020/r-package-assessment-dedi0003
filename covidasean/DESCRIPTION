@@ -1,0 +1,15 @@
+Package: covidasean
+Title: Comparing Outbreak between 5 ASEAN Countries
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Dea",
+           family = "Editya",
+           role = c("aut", "cre"),
+           email = "dedi0003@student.monash.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Displaying shiny app which displays covid-19 progress in ASEAN countries comprises of Indonesia, Malaysia, Singapore, Philippines and Thailand.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
