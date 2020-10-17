@@ -1,3 +1,10 @@
+#' This is dataset used for producing covid ASEAN shiny dashboard
+#'
+#' @example
+#' covid_asean_df
+#'
+#' noRd
+#'
 ## code to prepare `dataset` dataset goes here
 
 # Load all libraries
