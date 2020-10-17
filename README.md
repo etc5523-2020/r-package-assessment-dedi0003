@@ -4,7 +4,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of covidasean is to provide dashboard that gives overview on covid-19 outbreak in 5 ASEAN countries comprise of Indonesia, Malaysia, Singapore, Philippines and Thailand. Users can check the detail by selecting one particular country to show cases trendline. They can also see summary table that contains number of cases (confirmed, recovered and deaths) related to covid-19. 
+The goal of covidasean is to provide dashboard that gives overview on covid-19 outbreak in 5 ASEAN countries comprise of **Indonesia, Malaysia, Singapore, Philippines and Thailand**. Users can check the detail by selecting one particular country to show cases trendline. They can also see summary table that contains number of cases (confirmed, recovered and deaths) related to covid-19. 
+
+<img src = "https://i.imgur.com/VmnDSTJ.png" width = 80%>
 
 ## Installation
 
