@@ -54,7 +54,11 @@ library(covidasean)
 launch_app()
 ```
 
-The shiny dashboard consists of a control panel (left sidebar) and main display. The main display has 3 different plots.  
+
+<img src = "https://i.imgur.com/VmnDSTJ.png" width = 80%>
+
+
+The shiny dashboard consists of a control panel (left sidebar) and a main display. The main display has 3 different plots.  
 
 The first plot shows total new cases in 5 countries which can be clicked on to bring us to the second plot which details cases in the selected country. The third plot displays mobility trend which can be adjusted by several categories located on the control panel.
 
