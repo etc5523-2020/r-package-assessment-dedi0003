@@ -1,25 +1,31 @@
 
-# Covid Shiny Application
+# covidasean
+
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Covid Shiny Application is to give overview on covid-19 outbreak in 5 ASEAN countries comprises of Indonesia, Malaysia, Singapore, Philippines and Thailand. User can check the detail by selecting one particular country to show cases trendline. They can also see summary table that contains number of cases (confirmed, recovered and deaths) related to covid-19. 
+The goal of covidasean is to provide dashboard that gives overview on covid-19 outbreak in 5 ASEAN countries comprise of Indonesia, Malaysia, Singapore, Philippines and Thailand. Users can check the detail by selecting one particular country to show cases trendline. They can also see summary table that contains number of cases (confirmed, recovered and deaths) related to covid-19. 
 
 ## Installation
 
-You can install the covid_asean with:
+You can install the released version of covidasean using ```devtools``` R package:
 
 ``` r
-
-
+devtools::install_github("etc5523-2020/r-package-assessment-dedi0003", subdir = "covidasean")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example of the package use:
 
+### Loading covid-19 dataset
 ``` r
-library(yourpkg)
-## basic example code
+library(covidasean)
+covid_asean_df
+```
+### Launching shiny dashboard of covid ASEAN
+``` r
+library(covidasean)
+launch_app()
 ```
 

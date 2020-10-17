@@ -3,7 +3,7 @@
 #' @example
 #' covid_asean_df
 #'
-#' noRd
+#' @noRd
 #'
 ## code to prepare `dataset` dataset goes here
 
