@@ -1,8 +1,10 @@
 #'
 #'Sidebar function for user interface (called in shiny app.R)
 #'
+#'@noRd
 #'
 #'@export
+#'
 left_sidebar <- function(){
   # plotly preparation
 

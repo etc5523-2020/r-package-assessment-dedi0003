@@ -1,6 +1,8 @@
 #'Show a plot of the generated distribution
 #'
 #'
+#'@noRd
+#'
 #'@export
 main_panel <- function(){
   mainPanel(

@@ -1,0 +1,61 @@
+---
+title: "Shiny Application to Compare Covid Progression in 5 ASEAN Countries"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Shiny Application to Compare Covid in 5 ASEAN Countries}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covidasean)
+```
+
+This package contains shiny dashboard for comparing covid-19 outbreak in 5 ASEAN countries represented by Indonesia, Malaysia, Singapore, Philippines and Thailand. The data source is retrieved from [**tidycovid**](https://joachim-gassen.github.io/tidycovid19/) R package by Joachim Gassen and its period ranged from `r covid_asean_df$date[1]` until `r max(covid_asean_df$date)`.
+
+It also displays people's mobility trend in these countries (originally sourced from (Google's Mobility report)[https://www.google.com/covid19/mobility/]) which covers mobility in workstations, parks, groceries, stations, recreations and residentials. 
+
+# Accessing dataset
+
+We can access the dataset to self explore it via:
+```{r}
+library(covidasean)
+library(tibble)
+covid_asean_df
+```
+
+# Exploring dataset
+
+Exploring dataset can be done as an example below:
+```{r}
+library(covidasean)
+library(ggplot2)
+library(dplyr)
+covid_asean_df %>% 
+  filter(country == "Indonesia") %>% 
+  ggplot(aes(x = date, y = new_cases))+
+  geom_line(color = "red")+
+  geom_point(aes(x = date), color = "darkred")+
+  theme_minimal()
+```
+
+
+# Launching Shiny Dashboard
+Or alternatively (and easier way), we can launch the dashboard directly using:
+```{r , eval = FALSE}
+library(covidasean)
+launch_app()
+```
+
+The shiny dashboard consists of a control panel (left sidebar) and main display. The main display has 3 different plots.  
+
+The first plot shows total new cases in 5 countries which can be clicked on to bring us to the second plot which details cases in the selected country. The third plot displays mobility trend which can be adjusted by several categories located on the control panel.
+
+We can also check summary information for a particular country by selecting country name in the table plot of the control panel.

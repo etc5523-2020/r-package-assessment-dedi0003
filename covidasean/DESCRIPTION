@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "dedi0003@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Displaying shiny app which displays covid-19 progress in ASEAN countries comprises of Indonesia, Malaysia, Singapore, Philippines and Thailand.
+Description: Providing shiny dashboard to compare covid-19 outbreak in ASEAN countries comprise Indonesia, Malaysia, Singapore, Philippines and Thailand.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -26,3 +26,8 @@ Imports:
     plotly,
     ggplot2,
     kableExtra
+Suggests: 
+    knitr,
+    rmarkdown,
+    tibble
+VignetteBuilder: knitr
