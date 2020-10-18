@@ -1,7 +1,11 @@
-# server function test
-
+#' server function test
+#'
+#'@import
+#'plotly
+#'
 test_that("render", {
-  res <- render_case()
-  expect_length(1)
+
+  render <- render_case()
+  expect_length(render, 1)
 
 })

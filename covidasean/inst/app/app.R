@@ -55,9 +55,9 @@ ui <- fluidPage(br(),
 
     # Sidebar layout
     sidebarLayout(
-        left_sidebar(),
+        covidasean:::left_sidebar(),
 
-        main_panel()
+        covidasean:::main_panel()
         ),
     br())
 
@@ -68,7 +68,7 @@ server <- function(input, output, session) {
         "image source: BRProud.com"
     )
 
-    output$case <- render_case()
+    output$case <- covidasean:::render_case()
 
     output$trendchart <- renderPlotly({
         d <- event_data("plotly_click")

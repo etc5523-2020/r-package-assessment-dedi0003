@@ -2,16 +2,17 @@
 % Please edit documentation in R/launch.R
 \name{launch_app}
 \alias{launch_app}
-\title{Launch shiny covid ASEAN app}
+\title{Launching Shiny Dashboard of Covid ASEAN}
 \usage{
 launch_app()
 }
 \description{
-Launch shiny covid ASEAN app
+This function will launch shiny app dashboard which users can select several parameters on the dashboard, i.e. country, date range and mobility trend category. Detail explanation of the use is available on the dashboard.
 }
-\examples{
-launch_app()
+\references{
+Gassen, Joachim. 2020. Tidycovid19: Download, Tidy and Visualize Covid-19 Related Data.
+(\href{https://joachim-gassen.github.io/tidycovid19/}{Tidycovid19}),
 
-
-
+Chang, Winston, Joe Cheng, JJ Allaire, Yihui Xie, and Jonathan McPherson. 2020. Shiny: Web Application Framework for R.
+(\href{https://CRAN.R-project.org/package=shiny}{Shiny}).
 }

@@ -1,27 +1,15 @@
-#' This is dataset used for producing covid ASEAN shiny dashboard
-#'
-#' @example
-#' covid_asean_df
-#'
-#' @noRd
-#'
-## code to prepare `dataset` dataset goes here
 
-# Load all libraries
 library(dplyr)
-library(tidyverse)
-library(tsibble)
-library(lubridate)
-library(zoo)
 library(tidycovid19)
+library(tsibble)
+library(tidyverse)
+library(zoo)
+library(lubridate)
 
-
-#load data from tidycovid19
 updates <- download_merged_data(cached = TRUE)
 
 peers <- c("IDN", "SGP", "PHL", "THA", "MYS")
 
-# data wrangling
 covid_asean_df <- updates %>%
   filter(iso3c == peers) %>%
   mutate(

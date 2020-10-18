@@ -1,9 +1,9 @@
 #' Server side for rendering cases plot (main plot)
 #'
+#'@import plotly
 #'
 #'@noRd
 #'
-#'@export
 render_case <- function(){
 
 renderPlotly({

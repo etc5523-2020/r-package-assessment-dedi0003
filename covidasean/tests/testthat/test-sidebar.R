@@ -1,8 +1,12 @@
-# testing for sidebar UI function
+#' testing for sidebar UI function
+#'
+#' @import
+#' shiny
+#'
 
 test_that("sidebar", {
 
-  res <- left_sidebar()
-  expect_length(n = 3)
+  sidebar <- left_sidebar()
+  expect_length(sidebar, n = 3)
 
 })
