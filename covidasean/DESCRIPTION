@@ -8,7 +8,7 @@ Authors@R:
            email = "dedi0003@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Providing shiny dashboard to compare covid-19 outbreak in ASEAN countries comprise Indonesia, Malaysia, Singapore, Philippines and Thailand.
-License: GPL-3
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
