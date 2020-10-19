@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Shiny Application to Compare Covid Progression in 5 ASEAN Countries</title>
+
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      code.sourceCode > span { display: inline-block; line-height: 1.25; }
+  code.sourceCode > span { color: inherit; text-decoration: inherit; }
+  code.sourceCode > span:empty { height: 1.2em; }
+  .sourceCode { overflow: visible; }
+  code.sourceCode { white-space: pre; position: relative; }
+  div.sourceCode { margin: 1em 0; }
+  pre.sourceCode { margin: 0; }
+  @media screen {
+  div.sourceCode { overflow: auto; }
+  }
+  @media print {
+  code.sourceCode { white-space: pre-wrap; }
+  code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+  }
+  pre.numberSource code
+    { counter-reset: source-line 0; }
+  pre.numberSource code > span
+    { position: relative; left: -4em; counter-increment: source-line; }
+  pre.numberSource code > span > a:first-child::before
+    { content: counter(source-line);
+      position: relative; left: -1em; text-align: right; vertical-align: baseline;
+      border: none; display: inline-block;
+      -webkit-touch-callout: none; -webkit-user-select: none;
+      -khtml-user-select: none; -moz-user-select: none;
+      -ms-user-select: none; user-select: none;
+      padding: 0 4px; width: 4em;
+      color: #aaaaaa;
+    }
+  pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+  div.sourceCode
+    {   }
+  @media screen {
+  code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+  }
+  code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+  code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+  code span.at { color: #7d9029; } /* Attribute */
+  code span.bn { color: #40a070; } /* BaseN */
+  code span.bu { } /* BuiltIn */
+  code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+  code span.ch { color: #4070a0; } /* Char */
+  code span.cn { color: #880000; } /* Constant */
+  code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+  code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+  code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+  code span.dt { color: #902000; } /* DataType */
+  code span.dv { color: #40a070; } /* DecVal */
+  code span.er { color: #ff0000; font-weight: bold; } /* Error */
+  code span.ex { } /* Extension */
+  code span.fl { color: #40a070; } /* Float */
+  code span.fu { color: #06287e; } /* Function */
+  code span.im { } /* Import */
+  code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+  code span.op { color: #666666; } /* Operator */
+  code span.ot { color: #007020; } /* Other */
+  code span.pp { color: #bc7a00; } /* Preprocessor */
+  code span.sc { color: #4070a0; } /* SpecialChar */
+  code span.ss { color: #bb6688; } /* SpecialString */
+  code span.st { color: #4070a0; } /* String */
+  code span.va { color: #19177c; } /* Variable */
+  code span.vs { color: #4070a0; } /* VerbatimString */
+  code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    </style>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Shiny Application to Compare Covid Progression in 5 ASEAN Countries</h1>
+
+
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(covidasean)</span></code></pre></div>
+<p>This package contains shiny dashboard for comparing covid-19 outbreak in 5 ASEAN countries represented by Indonesia, Malaysia, Singapore, Philippines and Thailand. The data source is retrieved from <a href="https://joachim-gassen.github.io/tidycovid19/"><strong>tidycovid</strong></a> R package by Joachim Gassen and its period ranged from 2020-03-28 until 2020-10-09.</p>
+<p>It also displays people’s mobility trend in these countries (originally sourced from (Google’s Mobility report)[<a href="https://www.google.com/covid19/mobility/" class="uri">https://www.google.com/covid19/mobility/</a>]) which covers mobility in workstations, parks, groceries, stations, recreations and residentials.</p>
+<div id="accessing-dataset" class="section level1">
+<h1>Accessing dataset</h1>
+<p>We can access the dataset to self explore it via:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(covidasean)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(tibble)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>covid_asean_df</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt; # A tibble: 203 x 53</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt;    iso3c country date       confirmed deaths recovered ecdc_cases ecdc_deaths</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;   &lt;date&gt;         &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt;  1 IDN   Indone~ 2020-03-28      1155    102        59       1046          87</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt;  2 IDN   Indone~ 2020-04-02      1790    170       112       1677         157</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt;  3 IDN   Indone~ 2020-04-07      2738    221       204       2491         209</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt;  4 IDN   Indone~ 2020-04-12      4241    373       359       3842         327</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt;  5 IDN   Indone~ 2020-04-17      5923    520       607       5516         496</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="co">#&gt;  6 IDN   Indone~ 2020-04-22      7418    635       913       7135         616</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="co">#&gt;  7 IDN   Indone~ 2020-04-27      9096    765      1151       8882         743</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#&gt;  8 IDN   Indone~ 2020-05-02     10843    831      1665      10551         800</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co">#&gt;  9 IDN   Indone~ 2020-05-07     12776    930      2381      12438         895</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co">#&gt; 10 IDN   Indone~ 2020-05-12     14749   1007      3063      14265         991</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co">#&gt; # ... with 193 more rows, and 45 more variables: total_tests &lt;dbl&gt;,</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="co">#&gt; #   tests_units &lt;chr&gt;, soc_dist &lt;dbl&gt;, mov_rest &lt;dbl&gt;, pub_health &lt;dbl&gt;,</span></span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="co">#&gt; #   gov_soc_econ &lt;dbl&gt;, lockdown &lt;dbl&gt;, apple_mtr_driving &lt;dbl&gt;,</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a><span class="co">#&gt; #   apple_mtr_walking &lt;dbl&gt;, apple_mtr_transit &lt;dbl&gt;,</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="co">#&gt; #   gcmr_retail_recreation &lt;dbl&gt;, gcmr_grocery_pharmacy &lt;dbl&gt;,</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="co">#&gt; #   gcmr_parks &lt;dbl&gt;, gcmr_transit_stations &lt;dbl&gt;, gcmr_workplaces &lt;dbl&gt;,</span></span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="co">#&gt; #   gcmr_residential &lt;dbl&gt;, gtrends_score &lt;dbl&gt;, gtrends_country_score &lt;int&gt;,</span></span>
+<span id="cb2-24"><a href="#cb2-24"></a><span class="co">#&gt; #   region &lt;chr&gt;, income &lt;chr&gt;, population &lt;dbl&gt;, land_area_skm &lt;dbl&gt;,</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="co">#&gt; #   pop_density &lt;dbl&gt;, pop_largest_city &lt;dbl&gt;, life_expectancy &lt;dbl&gt;,</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a><span class="co">#&gt; #   gdp_capita &lt;dbl&gt;, timestamp &lt;dttm&gt;, new_cases &lt;dbl&gt;, ave_new_cases &lt;dbl&gt;,</span></span>
+<span id="cb2-27"><a href="#cb2-27"></a><span class="co">#&gt; #   new_recovered &lt;dbl&gt;, ave_new_recovered &lt;dbl&gt;, new_deaths &lt;dbl&gt;,</span></span>
+<span id="cb2-28"><a href="#cb2-28"></a><span class="co">#&gt; #   ave_new_deaths &lt;dbl&gt;, ave_work &lt;dbl&gt;, ave_station &lt;dbl&gt;, ave_grocery &lt;dbl&gt;,</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a><span class="co">#&gt; #   ave_recreation &lt;dbl&gt;, ave_parks &lt;dbl&gt;, ave_resident &lt;dbl&gt;,</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a><span class="co">#&gt; #   workstations &lt;dbl&gt;, stations &lt;dbl&gt;, groceries &lt;dbl&gt;, recreations &lt;dbl&gt;,</span></span>
+<span id="cb2-31"><a href="#cb2-31"></a><span class="co">#&gt; #   parks &lt;dbl&gt;, residentials &lt;dbl&gt;</span></span></code></pre></div>
+</div>
+<div id="exploring-dataset" class="section level1">
+<h1>Exploring dataset</h1>
+<p>Exploring dataset can be done as an example below:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(covidasean)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#&gt; </span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#&gt; Attaching package: &#39;dplyr&#39;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#&gt; The following objects are masked from &#39;package:stats&#39;:</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#&gt; </span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co">#&gt;     filter, lag</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co">#&gt; The following objects are masked from &#39;package:base&#39;:</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="co">#&gt; </span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>covid_asean_df <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="st">  </span><span class="kw">filter</span>(country <span class="op">==</span><span class="st"> &quot;Indonesia&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> date, <span class="dt">y =</span> new_cases))<span class="op">+</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">color =</span> <span class="st">&quot;red&quot;</span>)<span class="op">+</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x =</span> date), <span class="dt">color =</span> <span class="st">&quot;darkred&quot;</span>)<span class="op">+</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="launching-shiny-dashboard" class="section level1">
+<h1>Launching Shiny Dashboard</h1>
+<p>Or alternatively (and easier way), we can launch the dashboard directly using:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(covidasean)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">launch_app</span>()</span></code></pre></div>
+<p>The shiny dashboard consists of a control panel (left sidebar) and main display. The main display has 3 different plots.</p>
+<p>The first plot shows total new cases in 5 countries which can be clicked on to bring us to the second plot which details cases in the selected country. The third plot displays mobility trend which can be adjusted by several categories located on the control panel.</p>
+<p>We can also check summary information for a particular country by selecting country name in the table plot of the control panel.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
