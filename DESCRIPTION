@@ -1,16 +1,35 @@
-Package: yourPkg
-Title: What the Package Does (One Line, Title Case)
+Package: covidasean
+Title: Comparing Covid19 Outbreak between 5 ASEAN Countries
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Dea",
+           family = "Editya",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "dedi0003@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Description: Providing shiny dashboard to compare covid-19 outbreak in ASEAN countries comprise Indonesia, Malaysia, Singapore, Philippines and Thailand.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10),
+    tidyverse
+Imports: 
+    shiny,
+    zoo,
+    dplyr,
+    lubridate,
+    tidycovid19,
+    fontawesome,
+    tsibble,
+    plotly,
+    ggplot2,
+    kableExtra
+Suggests: 
+    knitr,
+    rmarkdown,
+    tibble,
+    testthat
+VignetteBuilder: knitr
