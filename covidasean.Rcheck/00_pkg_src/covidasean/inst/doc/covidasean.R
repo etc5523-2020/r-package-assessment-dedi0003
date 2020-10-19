@@ -7,6 +7,9 @@ knitr::opts_chunk$set(
 ## ----setup--------------------------------------------------------------------
 library(covidasean)
 
+## ---- eval = FALSE------------------------------------------------------------
+#  devtools::install_github("etc5523-2020/r-package-assessment-dedi0003", subdir = "covidasean")
+
 ## -----------------------------------------------------------------------------
 library(covidasean)
 library(tibble)

@@ -20,7 +20,13 @@ library(covidasean)
 
 This package contains shiny dashboard for comparing covid-19 outbreak in 5 ASEAN countries represented by Indonesia, Malaysia, Singapore, Philippines and Thailand. The data source is retrieved from [**tidycovid**](https://joachim-gassen.github.io/tidycovid19/) R package by Joachim Gassen and its period ranged from `r covid_asean_df$date[1]` until `r max(covid_asean_df$date)`.
 
-It also displays people's mobility trend in these countries (originally sourced from (Google's Mobility report)[https://www.google.com/covid19/mobility/]) which covers mobility in workstations, parks, groceries, stations, recreations and residentials. 
+It also displays people's mobility trend in these countries (originally sourced from [Google's Mobility report](https://www.google.com/covid19/mobility/) which covers mobility in workstations, parks, groceries, stations, recreations and residentials. 
+
+# How to install covidasean package?
+```{r , eval = FALSE}
+devtools::install_github("etc5523-2020/r-package-assessment-dedi0003", subdir = "covidasean")
+```
+
 
 # Accessing dataset
 
@@ -47,7 +53,7 @@ covid_asean_df %>%
 ```
 
 
-# Launching Shiny Dashboard
+# Launching shiny dashboard
 Or alternatively (and easier way), we can launch the dashboard directly using:
 ```{r , eval = FALSE}
 library(covidasean)

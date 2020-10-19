@@ -1,9 +1,7 @@
 #'Show a plot of the generated distribution
 #'
-#'
 #'@noRd
 #'
-#'@export
 main_panel <- function(){
   mainPanel(
   fluidRow(tags$style(".fa-heart {color:#E87722}", ".fa-wrench {color:#E87722}"),
