@@ -63,7 +63,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="0417:3C07:25EF1A:374C7F:5F924116" data-pjax-transient="true"/><meta name="html-safe-nonce" content="94aec798a3df7ca1462c3d49b4d4803044f64b52" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDE3OjNDMDc6MjVFRjFBOjM3NEM3Rjo1RjkyNDExNiIsInZpc2l0b3JfaWQiOiIzNjYxODczMDcyMTcwMTI1MDQ1IiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aGVhc3QtMiIsInJlZ2lvbl9yZW5kZXIiOiJhcC1zb3V0aGVhc3QtMiJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="3ba6ac6bc9fb3c3cae27ea565950bf80b03ef51caf9470565a09d3c24dc90589" data-pjax-transient="true"/><meta name="cookie-consent-required" content="false" data-pjax-transient="true"/>
+  <meta name="request-id" content="04EE:7C13:26800D:385284:5F9242BA" data-pjax-transient="true"/><meta name="html-safe-nonce" content="94aec798a3df7ca1462c3d49b4d4803044f64b52" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNEVFOjdDMTM6MjY4MDBEOjM4NTI4NDo1RjkyNDJCQSIsInZpc2l0b3JfaWQiOiIzNjYxODczMDcyMTcwMTI1MDQ1IiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aGVhc3QtMiIsInJlZ2lvbl9yZW5kZXIiOiJhcC1zb3V0aGVhc3QtMiJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="4bf24a7a0cd92b2afd0fdef70d1f0d26ce326e813bd2e65a788873d0c026731e" data-pjax-transient="true"/><meta name="cookie-consent-required" content="false" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:302831942" data-pjax-transient>
 
@@ -314,7 +314,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="vQbjC13gFoB2TzNB9p79VQ3i9yTAfiok6d+TNTKWNs3qSmnp6lqp+1pFoS5AxyyY5RAUh7AwbVwU+zlUDKMFoA==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="ORdmTWbaEUZ+HzgHoKcD3Sk91AypZR7Af5iAfXm4MU1uW+yv0WCuPVIVqmgW/tIQwc83r9krWbiCvCocR40CIA==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -807,7 +807,7 @@
 
   <div class="UnderlineNav my-2 box-shadow-none">
     <div class="UnderlineNav-body" role="tablist">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_type=clone" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="6yG4xROl3u0MLQo/n2qR7wV5gfLE9vLtDUHPHydChlfqJVJOZ/aRg9fOL6QHu9SfYBwrp0P76pPpRvnfNY4oDQ==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_type=clone" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="0waU++B32K+LZBEd3k6G1yvZ3F+6IQcMLcxm4jAGl/3SAn5wlCSXwVCHNIZGn8OnTrx2Cj0sH3LJy1AiIso5pw==" />
           <button name="protocol_selector" type="submit" role="tab" class="UnderlineNav-item lh-default f6 py-0 px-0 mr-2 position-relative" aria-selected="true" value="http" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_HTTPS&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:302831942,&quot;originating_url&quot;:&quot;https://github.com/etc5523-2020/r-package-assessment-dedi0003&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="912c37a85ba396301b01ffe03fdb45102c050d15ecbe4f8e225bd62802274fe3">
             HTTPS
 </button>          <button name="protocol_selector" type="submit" role="tab" class="UnderlineNav-item lh-default f6 py-0 px-0 mr-2 position-relative" value="gh_cli" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_GH_CLI&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:302831942,&quot;originating_url&quot;:&quot;https://github.com/etc5523-2020/r-package-assessment-dedi0003&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fe37ebe46aa0995e29ff252c0c98b9a9723d0e9e01b719866a3c89eac29225ef">
@@ -919,27 +919,27 @@
   
 
         <span class="d-none d-sm-inline">
-          <a data-pjax="true" title="add update" class="link-gray-dark" href="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c">add update</a>
+          <a data-pjax="true" title="copy to main folder" class="link-gray-dark" href="/etc5523-2020/r-package-assessment-dedi0003/commit/df4c56c1c072658f159f56105bab9c7ba7fa8d0c">copy to main folder</a>
         </span>
     </div>
     <span class="hidden-text-expander ml-2 d-inline-block d-inline-block d-lg-none">
       <button type="button" class="hx_bg-black-fade-15 text-gray-dark ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
     </span>
     <div class="d-flex flex-auto flex-justify-end ml-3 flex-items-baseline">
-        <include-fragment accept="text/fragment+html" src="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c/rollup?direction=e" class="d-inline"></include-fragment>
-      <a href="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c" class="f6 link-gray text-mono ml-2 d-none d-lg-inline" data-pjax>d26a2d7</a>
-      <a href="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c" class="link-gray ml-2" data-pjax>
-        <relative-time datetime="2020-10-23T02:28:19Z" class="no-wrap">Oct 23, 2020</relative-time>
+        <include-fragment accept="text/fragment+html" src="/etc5523-2020/r-package-assessment-dedi0003/commit/df4c56c1c072658f159f56105bab9c7ba7fa8d0c/rollup?direction=e" class="d-inline"></include-fragment>
+      <a href="/etc5523-2020/r-package-assessment-dedi0003/commit/df4c56c1c072658f159f56105bab9c7ba7fa8d0c" class="f6 link-gray text-mono ml-2 d-none d-lg-inline" data-pjax>df4c56c</a>
+      <a href="/etc5523-2020/r-package-assessment-dedi0003/commit/df4c56c1c072658f159f56105bab9c7ba7fa8d0c" class="link-gray ml-2" data-pjax>
+        <relative-time datetime="2020-10-23T02:37:29Z" class="no-wrap">Oct 23, 2020</relative-time>
       </a>
     </div>
   </div>
   <div class="pl-0 pl-md-5 flex-order-1 width-full Details-content--hidden">
       <div class="mt-2">
-        <a data-pjax="true" class="link-gray-dark text-bold" href="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c">add update</a>
+        <a data-pjax="true" class="link-gray-dark text-bold" href="/etc5523-2020/r-package-assessment-dedi0003/commit/df4c56c1c072658f159f56105bab9c7ba7fa8d0c">copy to main folder</a>
       </div>
 
     <div class="d-flex flex-items-center">
-      <span class="text-gray-dark text-mono d-lg-none hx_bg-black-fade-15 px-1 rounded-1 text-small mt-2">d26a2d7</span>
+      <span class="text-gray-dark text-mono d-lg-none hx_bg-black-fade-15 px-1 rounded-1 text-small mt-2">df4c56c</span>
     </div>
   </div>
       <div class="flex-shrink-0">
@@ -949,7 +949,7 @@
             <a data-pjax href="/etc5523-2020/r-package-assessment-dedi0003/commits/master" class="pl-3 pr-3 py-3 p-md-0 mt-n3 mb-n3 mr-n3 m-md-0 link-gray-dark no-underline no-wrap">
               <svg class="octicon octicon-history text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
               <span class="d-none d-sm-inline">
-                    <strong>20</strong>
+                    <strong>21</strong>
                   <span aria-label="Commits on master" class="text-gray d-none d-lg-inline">commits</span>
               </span>
             </a>
@@ -962,7 +962,8 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/etc5523-2020/r-package-assessment-dedi0003/tree/d26a2d78642745179485b7e1517c46f83e14510c">Permalink</a>
+  <include-fragment src="/etc5523-2020/r-package-assessment-dedi0003/file-list/master">
+      <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/etc5523-2020/r-package-assessment-dedi0003/tree/df4c56c1c072658f159f56105bab9c7ba7fa8d0c">Permalink</a>
 
   <div class="include-fragment-error flash flash-error flash-full py-2">
   <svg class="octicon octicon-alert" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
@@ -989,13 +990,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy .github folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/26328491e1737190856682d10db6535e437a1d87">copy .github folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T03:04:39Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1010,13 +1009,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1031,13 +1028,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1052,13 +1047,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="add docs to the root folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/1afc9604bb0bb38a66b8a90e5448e4b6d16fd5e1">add docs to the root folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:42:29Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1073,13 +1066,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="add update" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/d26a2d78642745179485b7e1517c46f83e14510c">add update</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-23T02:28:19Z" class="no-wrap">Oct 23, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1094,13 +1085,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1115,13 +1104,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1136,13 +1123,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1157,13 +1142,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="add docs to the root folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/1afc9604bb0bb38a66b8a90e5448e4b6d16fd5e1">add docs to the root folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:42:29Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1178,13 +1161,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1199,13 +1180,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1220,13 +1199,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1241,13 +1218,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1262,13 +1237,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="starting" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/c7e4d69307bf72f7fdc8fa59e931dbcd493bac74">starting</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-16T07:59:56Z" class="no-wrap">Oct 16, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1283,13 +1256,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="Initial commit" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/1621cb6fed19f091d6b33a5b1da7291ccbc61a6d">Initial commit</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-10T06:29:29Z" class="no-wrap">Oct 10, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1304,13 +1275,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy desc namespace and readme from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/49eaedbf5f47901e2d32ff075e43c48942831337">copy desc namespace and readme from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T03:21:09Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1325,13 +1294,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1346,13 +1313,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1367,13 +1332,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy desc namespace and readme from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/49eaedbf5f47901e2d32ff075e43c48942831337">copy desc namespace and readme from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T03:21:09Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1388,13 +1351,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy desc namespace and readme from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/49eaedbf5f47901e2d32ff075e43c48942831337">copy desc namespace and readme from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T03:21:09Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1409,13 +1370,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="copy some folders from covidasean folder" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/eef75dcdeb87d5886232faacf4fd819d24a58c9a">copy some folders from covidasean folder</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-19T02:50:31Z" class="no-wrap">Oct 19, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1430,13 +1389,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="edit documentation" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/7737477d20a2552e0a82701306100d651c950757">edit documentation</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-18T02:36:05Z" class="no-wrap">Oct 18, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1451,13 +1408,11 @@
           </div>
 
           <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
-              <span class="css-truncate css-truncate-target d-block width-fit">
-                    <a data-pjax="true" title="starting" class="link-gray" href="/etc5523-2020/r-package-assessment-dedi0003/commit/c7e4d69307bf72f7fdc8fa59e931dbcd493bac74">starting</a>
-              </span>
+              <div class="Skeleton Skeleton--text col-7">&nbsp;</div>
           </div>
 
           <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
-              <time-ago datetime="2020-10-16T07:59:56Z" class="no-wrap">Oct 16, 2020</time-ago>
+              <div class="Skeleton Skeleton--text">&nbsp;</div>
           </div>
 
         </div>
@@ -1469,7 +1424,7 @@
     </div>
   </div>
 
-
+</include-fragment>
 
 
 </div>
@@ -1573,12 +1528,6 @@ launch_app()</pre></div>
 
 
 
-            </div>
-          </div>
-          <div class="BorderGrid-row" hidden>
-            <div class="BorderGrid-cell">
-              <include-fragment src="/etc5523-2020/r-package-assessment-dedi0003/used_by_list" accept="text/fragment+html">
-</include-fragment>
             </div>
           </div>
           <div class="BorderGrid-row">
