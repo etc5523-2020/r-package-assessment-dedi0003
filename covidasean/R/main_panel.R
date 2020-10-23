@@ -1,5 +1,7 @@
 #'Show a plot of the generated distribution
 #'
+#'@import shiny
+#'
 #'@noRd
 #'
 main_panel <- function(){

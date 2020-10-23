@@ -11,7 +11,7 @@ a tibble with 203 rows and 53 columns.
 covid_asean_df
 }
 \description{
-This is dataset used for producing covid ASEAN shiny dashboard
+This is dataset used for producing covid ASEAN shiny dashboard. The dataset contains covid-19 cases data from Indonesia, Malaysia, Philippines, Singapore and Thailand.
 }
 \examples{
 head(covid_asean_df)
