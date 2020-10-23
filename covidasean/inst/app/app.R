@@ -8,7 +8,6 @@ library(plotly)
 library(tsibble)
 library(lubridate)
 library(zoo)
-library(fontawesome)
 library(kableExtra)
 library(tidycovid19)
 
