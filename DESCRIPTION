@@ -31,7 +31,8 @@ Suggests:
     rmarkdown,
     tibble,
     testthat,
-    tidyverse
+    tidyverse,
+    tsibble
 Remotes:
     nset-ornl/wbstats,
     joachim-gassen/tidycovid19
