@@ -7,6 +7,7 @@ library(plotly)
 library(tsibble)
 library(lubridate)
 library(zoo)
+require(magrittr)
 library(kableExtra)
 library(tidycovid19)
 
