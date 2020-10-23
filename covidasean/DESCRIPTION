@@ -22,7 +22,6 @@ Imports:
     lubridate,
     tidycovid19,
     fontawesome,
-    tsibble,
     plotly,
     ggplot2,
     kableExtra
@@ -30,7 +29,8 @@ Suggests:
     knitr,
     rmarkdown,
     tibble,
-    testthat
+    testthat,
+    tidyverse
 Remotes:
     nset-ornl/wbstats,
     joachim-gassen/tidycovid19

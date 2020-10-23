@@ -21,7 +21,6 @@ Imports:
     dplyr,
     lubridate,
     tidycovid19,
-    tsibble,
     plotly,
     ggplot2,
     kableExtra,
