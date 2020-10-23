@@ -14,22 +14,24 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
-    R (>= 2.10), 
-    tidyverse
+    R (>= 2.10)
 Imports: 
     shiny,
     zoo,
     dplyr,
     lubridate,
     tidycovid19,
-    fontawesome,
     tsibble,
     plotly,
     ggplot2,
-    kableExtra
+    kableExtra,
+    magrittr,
+    wbstats
 Suggests: 
     knitr,
     rmarkdown,
     tibble,
     testthat
+Remotes:
+    nset-ornl/wbstats
 VignetteBuilder: knitr
