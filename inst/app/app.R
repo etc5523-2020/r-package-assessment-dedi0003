@@ -8,7 +8,6 @@ library(tsibble)
 library(lubridate)
 library(zoo)
 library(kableExtra)
-library(tidyverse)
 library(magrittr)
 library(tidycovid19)
 

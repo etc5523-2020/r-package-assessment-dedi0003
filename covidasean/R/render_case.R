@@ -4,7 +4,7 @@
 #'
 #'@noRd
 #'
-library(tidyverse)
+
 render_case <- function(){
 
 renderPlotly({
