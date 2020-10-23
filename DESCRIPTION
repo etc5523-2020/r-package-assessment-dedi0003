@@ -14,8 +14,7 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
-    R (>= 2.10),
-    tidycovid19
+    R (>= 2.10)
 Imports: 
     shiny,
     zoo,
@@ -34,5 +33,6 @@ Suggests:
     tibble,
     testthat
 Remotes:
-    nset-ornl/wbstats
+    nset-ornl/wbstats,
+    joachim-gassen/tidycovid19
 VignetteBuilder: knitr
