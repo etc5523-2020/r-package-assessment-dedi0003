@@ -7,8 +7,9 @@ library(plotly)
 library(tsibble)
 library(lubridate)
 library(zoo)
-require(magrittr)
 library(kableExtra)
+library(tidyverse)
+library(magrittr)
 library(tidycovid19)
 
 #load data from tidycovid19
